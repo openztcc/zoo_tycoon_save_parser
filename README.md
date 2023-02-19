@@ -10,7 +10,7 @@ First pass of a Zoo Tycoon (2001) savefile parser. Currently very incomplete.
 ## Details
 
 ### Tiles
-Tiles are 10 bytes, stored in columns. So far there appear to be bytes for the height, terrain_id and a byte for each edge, but the specifics are still a mystery, at this point I'm going further work on decompiling will help here.
+Tiles are 10 bytes, stored in columns. So far there appear to be bytes for the height, terrain_id and a byte for each edge, but the specifics are still a mystery, at this point I'm hoping further work on decompiling will help here.
 
 ### Units
 
