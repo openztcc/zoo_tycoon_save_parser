@@ -9,6 +9,11 @@ def discard_padding(binary_file: BinaryIO, num_bytes):
         assert _char == 0
 
 
+def discard_bytes(binary_file: BinaryIO, num_bytes: int):
+    for _ in range(num_bytes):
+        _char = parse_uchar(binary_file)
+
+
 def parse_uint(binary_file: BinaryIO):
     int_format = "<I"
     int_bytes = binary_file.read(struct.calcsize(int_format))

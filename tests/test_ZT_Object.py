@@ -16,3 +16,6 @@ def test_parse_zt_object_trashcan():
 
         assert len(binary_file.read()) == 0
 
+def test_parse_zt_object_animal_theatre_with_guests():
+    with open("./savefile_subsets/Animal Theatre_1_5_current_guests.zoo", 'rb') as binary_file:
+        zt_object = parse_zt_object(binary_file)
