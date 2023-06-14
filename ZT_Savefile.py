@@ -19,10 +19,10 @@ class ZT_Savefile:
         self.exhibits = parse_zt_exhibits(binary_file)
         self.unknown_tank_struct = parse_zt_unknown_tank_struct(binary_file)
         self.tile_list = parse_zt_tiles(binary_file, self.header.x_tile_size, self.header.y_tile_size)
-        self.unknown_uint_1 = parse_uint(binary_file)
+        # self.unknown_uint_1 = parse_uint(binary_file)
         self.object_list = parse_zt_objects(binary_file)
-        self.unknown_struct_1 = parse_zt_unknown_struct(binary_file, 6)
-        self.features = parse_zt_features(binary_file)
+        # self.unknown_struct_1 = parse_zt_unknown_struct(binary_file, 6)
+        # self.features = parse_zt_features(binary_file)
         print("Test")
 
 
